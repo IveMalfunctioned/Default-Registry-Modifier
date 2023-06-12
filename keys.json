@@ -1,0 +1,12 @@
+{
+    "Search box size": {
+        "name": "SearchboxTaskbarMode",
+        "key": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
+        "type": "REG_DWORD",
+        "states": {
+            "Hidden": 0,
+            "Icon": 1,
+            "Box": 2
+        }
+    }
+}
