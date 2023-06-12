@@ -1,12 +1,24 @@
-{
-    "Search box size": {
+[
+    {
+        "displayname": "Search box size",
         "name": "SearchboxTaskbarMode",
-        "path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
+        "key": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
         "type": "REG_DWORD",
         "states": {
             "Hidden": 0,
             "Icon": 1,
             "Box": 2
         }
+    },
+
+    {
+        "displayname": "Bing search",
+        "name": "BingSearchEnabled",
+        "key": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
+        "type": "REG_DWORD",
+        "states": {
+            "Disabled": 0,
+            "Enabled": 1
+        }
     }
-}
+]
