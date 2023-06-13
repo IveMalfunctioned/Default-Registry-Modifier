@@ -1,26 +1,26 @@
-[
-    {
-        "SearchboxTaskbarMode": {
-            "displayname": "Search box size",
-            "path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
-            "type": "REG_DWORD",
-            "states": {
-                "Hidden": 0,
-                "Icon": 1,
-                "Box": 2
-            }
-        }
-    },
-
-    {
-    "BingSearchEnabled": {
-        "displayname": "Bing search",
+{
+    "0": {
+        "displayname": "Search box size",
+        "description": "Size of the Windows Search in the taskbar",
+        "key": "SearchboxTaskbarMode",
         "path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
         "type": "REG_DWORD",
         "states": {
-            "Disabled": 0,
-            "Enabled": 1
+            "Hidden": 0,
+            "Icon": 1,
+            "Box": 2
+        }
+    },
+
+    "1": {
+        "displayname": "Bing search",
+        "description": "Whether or not Windows Search in the taskbar uses Bing to search the internet",
+        "key": "BingSearchEnabled",
+        "path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
+        "type": "REG_DWORD",
+        "states": {
+            "disabled": 0,
+            "enabled": 1
         }
     }
-    }
-]
+}
