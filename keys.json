@@ -14,7 +14,7 @@
 
     "1": {
         "displayname": "Bing search",
-        "description": "Whether or not Windows Search in the taskbar uses Bing to search the internet",
+        "description": "Use Bing in the Windows search bar",
         "key": "BingSearchEnabled",
         "path": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
         "type": "REG_DWORD",
