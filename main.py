@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 from classes import Hive, jsonDl, data
 import ctypes, os
+import pkg_resources
 
 def isAdmin():
     try:
@@ -143,11 +144,13 @@ if isAdmin():
                 self.console.insert('end', "Completed\n\n")
                 self.console.config(state="disabled")
 
+    icon = pkg_resources.resource_filename(__name__, "icon.ico")
+
     window = tk.Tk()
     window.geometry('420x800')
     window.resizable(False, False)
     window.title("Default Registry Modifier")
-    window.iconbitmap(default="icon.ico")
+    window.iconbitmap(default=icon)
     main = MainApp(window, data)
     window.mainloop()
 
