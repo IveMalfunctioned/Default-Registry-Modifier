@@ -64,7 +64,7 @@
         "description": "Enable or disable autorun actions upon detecting a media device",
         "key": "NoDriveTypeAutoRun",
         "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
-        "type": "REG_DWord",
+        "type": "REG_DWORD",
         "states": {
             "disabled": 255,
             "enabled": 145
