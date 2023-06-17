@@ -1,4 +1,4 @@
-{
+data = {
     "0": {
         "displayname": "Bing search",
         "description": "Use Bing in the Windows search bar",
@@ -87,7 +87,7 @@
         "displayname": "Small taskbar icons",
         "description": "Enable or disable small taskbar icons",
         "key": "TaskbarSmallIcons",
-        "path": "HKEY_USERS\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+        "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
         "type": "REG_DWORD",
         "states": {
             "disabled": "0",
@@ -99,7 +99,7 @@
         "displayname": "Show known file extensions",
         "description": "Enable or disable showing known file extensions",
         "key": "HideFileExt",
-        "path": "HKEY_USERS\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+        "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
         "type": "REG_DWORD",
         "states": {
             "disabled": "1",
@@ -111,7 +111,7 @@
         "displayname": "Show hidden files",
         "description": "Enable or disable showing hidden files",
         "key": "Hidden",
-        "path": "HKEY_USERS\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+        "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
         "type": "REG_DWORD",
         "states": {
             "disabled": "2",
