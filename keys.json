@@ -76,7 +76,7 @@
         "description": "Enable or disable the sticky keys prompt upon pressing shift 5 times",
         "key": "Flags",
         "path": "HKEY_USERS\\Default\\Control Panel\\Accessibility\\StickyKeys",
-        "type": "String",
+        "type": "REG_SZ",
         "states": {
             "disabled": "506",
             "enabled": "510"
