@@ -24,5 +24,6 @@ The program pulls a list of registry keys from [some online JSON data hosted in 
 - Add the ability to apply these tweaks to the current user, any specified user, or all users
 - Add command line options
 - Add manual key input
+- Add update checking
 
 For more direct information or updates on the project, join the [Windows Modding Discord](https://discord.gg/hzScjC9re6)
