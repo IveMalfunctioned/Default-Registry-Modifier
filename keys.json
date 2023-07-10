@@ -117,5 +117,29 @@
             "disabled": "2",
             "enabled": "1"
         }
+    },
+
+    "10": {
+        "displayname": "Dark mode",
+        "description": "Enable or disable dark mode",
+        "key": "AppsUseLightTheme",
+        "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes",
+        "type": "REG_DWORD",
+        "states": {
+            "disabled": "1",
+            "enabled": "0"
+        }
+    },
+
+    "11": {
+        "displayname": "Full screen start menu",
+        "description": "Enable or disable full screen start menu",
+        "key": "ForceStartSize",
+        "path": "HKEY_USERS\\Default\\Software\\Policies\\Microsoft\\Windows\\Explorer",
+        "type": "REG_DWORD",
+        "states": {
+            "disabled": "1",
+            "enabled": "2"
+        }
     }
 }
