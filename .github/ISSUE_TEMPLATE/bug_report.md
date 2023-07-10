@@ -29,5 +29,8 @@ Please state your Windows version here.
 **Application version**
 Please state which version of Default Registry Modifier you are using here. It can be found in Info > About App
 
+**Console log**
+Please paste your console log here.
+
 **Additional context**
 Add any other context about the problem here.
