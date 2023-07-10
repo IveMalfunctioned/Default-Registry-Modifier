@@ -14,7 +14,7 @@ Enable or disable the desired tweaks (If you changed your mind about modifying o
 
 # How it works
 
-The program pulls a list of registry keys from [some online JSON data hosted in this GitHub repo](https://github.com/IveMalfunctioned/Default-Registry-Modifier/releases/latest). It goes through it and creates an entry for each one with labels & buttons to enable or disable it. Clicking enable or disable adds the selected tweak to a list for enabling or disabling - of which is gone through upon confirming you want to save the changes. One of the planned QOL features is being able to import offline JSON data. This means that you can download `keys.json` from this repo or modify it/create your own. Speaking of which:
+The program pulls a list of registry keys from [some online JSON data hosted in this GitHub repo](https://github.com/IveMalfunctioned/Default-Registry-Modifier/blob/main/keys.json). It goes through it and creates an entry for each one with labels & buttons to enable or disable it. Clicking enable or disable adds the selected tweak to a list for enabling or disabling - of which is gone through upon confirming you want to save the changes. One of the planned QOL features is being able to import offline JSON data. This means that you can download `keys.json` from this repo or modify it/create your own. Speaking of which:
 
 # Other features:
 - Create backups
