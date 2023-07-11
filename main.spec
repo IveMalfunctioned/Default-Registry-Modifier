@@ -28,7 +28,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='Default Registry Editor',
+    name='Default Registry Modifier',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
