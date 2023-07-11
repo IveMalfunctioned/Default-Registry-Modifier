@@ -17,6 +17,10 @@ data = None
 try:
     r = requests.get("https://raw.githubusercontent.com/IveMalfunctioned/Default-Registry-Modifier/main/keys.json")
     data = json.loads(r.text)
+
+    #with open("G:\Desktop\Default Registry Modifier\keys.json", 'r') as file:
+    #   data=json.loads(file.read())
+    
     hasInternet = 1
 except:
     hasInternet = 0
@@ -67,7 +71,7 @@ if isAdmin():
                     max1.append(self.data[str(i)]["description"])
                 if len(max(max1, key=len)) >= 60:
                     descLength = (len(max(max1, key=len)) - 60) * 5
-                self.canvas = tk.Canvas(window,scrollregion=(0,0,420+descLength,478+len(self.data)*30), highlightthickness=0)
+                self.canvas = tk.Canvas(window,scrollregion=(0,0,420+descLength,478+len(self.data)*37), highlightthickness=0)
             else:
                 self.canvas = tk.Canvas(window, highlightthickness=0)
             self.canvas.config(width=420, height=476)
