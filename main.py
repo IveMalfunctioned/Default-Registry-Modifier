@@ -297,7 +297,7 @@ if isAdmin():
                     descLength = (len(max(max1, key=len)) - 60) * 5
                 else:
                     descLength = 0
-                self.canvas.configure(scrollregion=(0,0,420+descLength,478+len(self.data)*30))
+                self.canvas.configure(scrollregion=(0,0,420+descLength,478+len(self.data)*37))
                 self.btns = []
                 
                 self.addKeyEntries()
@@ -341,7 +341,7 @@ if isAdmin():
                 descLength = (len(max(max1, key=len)) - 60) * 5
             else:
                 descLength = 0
-            self.canvas.configure(scrollregion=(0,0,420+descLength,478+len(self.data)*30))
+            self.canvas.configure(scrollregion=(0,0,420+descLength,478+len(self.data)*37))
             self.btns = []
             
             self.addKeyEntries()
