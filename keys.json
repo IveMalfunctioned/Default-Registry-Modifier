@@ -3,6 +3,7 @@
         "displayname": "Bing search",
         "description": "Use Bing in the Windows search bar",
         "key": "BingSearchEnabled",
+        "winversions": ["11", "10"],
         "path": "HKEY_USERS\\Default\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
         "type": "REG_DWORD",
         "states": {
