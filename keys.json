@@ -2,8 +2,8 @@
     "0": {
         "displayname": "Bing search",
         "description": "Use Bing in the Windows search bar",
-        "key": "BingSearchEnabled",
         "winversions": ["11", "10"],
+        "key": "BingSearchEnabled",
         "path": "HKEY_USERS\\Default\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
         "type": "REG_DWORD",
         "states": {
@@ -15,6 +15,7 @@
     "1": {
         "displayname": "Windows SmartScreen filter",
         "description": "Enable or disable Windows Defender's SmartScreen filter",
+        "winversions": ["11", "10"],
         "key": "EnableWebContentEvaluation",
         "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\AppHost",
         "type": "REG_DWORD",
@@ -27,6 +28,7 @@
     "2": {
         "displayname": "Feedback",
         "description": "Enable or disable Windows Feedback notifications",
+        "winversions": ["11", "10"],
         "key": "NumberOfSIUFInPeriod",
         "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Siuf\\Rules",
         "type": "REG_DWORD",
@@ -39,6 +41,7 @@
     "3": {
         "displayname": "Advertising ID",
         "description": "Enable or disable advertising ID used for targeted advertising",
+        "winversions": ["11", "10"],
         "key": "Enabled",
         "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo",
         "type": "REG_DWORD",
@@ -51,6 +54,7 @@
     "4": {
         "displayname": "Autoplay",
         "description": "Enable or disable autoplay toasts & notifications",
+        "winversions": ["11", "10"],
         "key": "DisableAutoplay",
         "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\AutoplayHandlers",
         "type": "REG_DWORD",
@@ -63,6 +67,7 @@
     "5": {
         "displayname": "Autorun",
         "description": "Enable or disable autorun actions upon detecting a media device",
+        "winversions": ["11", "10"],
         "key": "NoDriveTypeAutoRun",
         "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
         "type": "REG_DWORD",
@@ -75,6 +80,7 @@
     "6": {
         "displayname": "Sticky keys prompt",
         "description": "Enable or disable the sticky keys prompt upon pressing shift 5 times",
+        "winversions": ["11", "10"],
         "key": "Flags",
         "path": "HKEY_USERS\\Default\\Control Panel\\Accessibility\\StickyKeys",
         "type": "REG_SZ",
@@ -87,6 +93,7 @@
     "7": {
         "displayname": "Small taskbar icons",
         "description": "Enable or disable small taskbar icons",
+        "winversions": ["11", "10"],
         "key": "TaskbarSmallIcons",
         "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
         "type": "REG_DWORD",
@@ -99,6 +106,7 @@
     "8": {
         "displayname": "Show known file extensions",
         "description": "Enable or disable showing known file extensions",
+        "winversions": ["11", "10"],
         "key": "HideFileExt",
         "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
         "type": "REG_DWORD",
@@ -111,6 +119,7 @@
     "9": {
         "displayname": "Show hidden files",
         "description": "Enable or disable showing hidden files",
+        "winversions": ["11", "10"],
         "key": "Hidden",
         "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
         "type": "REG_DWORD",
@@ -123,6 +132,7 @@
     "10": {
         "displayname": "Dark mode",
         "description": "Enable or disable dark mode",
+        "winversions": ["11", "10"],
         "key": "AppsUseLightTheme",
         "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes",
         "type": "REG_DWORD",
@@ -135,6 +145,7 @@
     "11": {
         "displayname": "Full screen start menu",
         "description": "Enable or disable full screen start menu",
+        "winversions": ["11", "10"],
         "key": "ForceStartSize",
         "path": "HKEY_USERS\\Default\\Software\\Policies\\Microsoft\\Windows\\Explorer",
         "type": "REG_DWORD",
