@@ -185,7 +185,7 @@
 		"displayname": "Taskbar search box",
 		"description": "Select size of the taskbar search box",
 		"winversions": ["10"],
-		"data": "DontKnowRN",
+		"data": "SearchboxTaskbarMode",
 		"key": "HKEY_USERS\\Default\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
 		"type": "REG_DWORD",
 		"values": {
