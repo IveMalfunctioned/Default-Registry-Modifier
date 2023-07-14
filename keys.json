@@ -204,4 +204,5 @@
         "key": "HKEY_CURRENT_USER\\SOFTWARE\\Classes\\Local Settings\\ImmutableMuiCache\\Strings\\52C64B7E",
         "type": "REG_SZ",
         "DefaultValue": "Windows Defender Firewall"
+    }
 }
