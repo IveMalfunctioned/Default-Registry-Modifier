@@ -1,170 +1,196 @@
 {
     "0": {
+        "dataType": "OnOrOffV",
         "displayname": "Bing search",
         "description": "Use Bing in the Windows search bar",
         "winversions": ["11", "10"],
-        "key": "BingSearchEnabled",
-        "path": "HKEY_USERS\\Default\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
+        "data": "BingSearchEnabled",
+        "key": "HKEY_USERS\\Default\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
         "type": "REG_DWORD",
-        "states": {
+        "values": {
             "disabled": 0,
             "enabled": 1
         }
     },
 
     "1": {
+        "dataType": "OnOrOffV",
         "displayname": "Windows SmartScreen filter",
         "description": "Enable or disable Windows Defender's SmartScreen filter",
         "winversions": ["11", "10"],
-        "key": "EnableWebContentEvaluation",
-        "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\AppHost",
+        "data": "EnableWebContentEvaluation",
+        "key": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\AppHost",
         "type": "REG_DWORD",
-        "states": {
+        "values": {
             "disabled": 0,
             "enabled": 1
         }
     },
 
     "2": {
+        "dataType": "OnOrOffV",
         "displayname": "Feedback",
         "description": "Enable or disable Windows Feedback notifications",
         "winversions": ["11", "10"],
-        "key": "NumberOfSIUFInPeriod",
-        "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Siuf\\Rules",
+        "data": "NumberOfSIUFInPeriod",
+        "key": "HKEY_USERS\\Default\\Software\\Microsoft\\Siuf\\Rules",
         "type": "REG_DWORD",
-        "states": {
+        "values": {
             "disabled": 0,
             "enabled": 1
         }
     },
 
     "3": {
+        "dataType": "OnOrOffV",
         "displayname": "Advertising ID",
         "description": "Enable or disable advertising ID used for targeted advertising",
         "winversions": ["11", "10"],
-        "key": "Enabled",
-        "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo",
+        "data": "Enabled",
+        "key": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo",
         "type": "REG_DWORD",
-        "states": {
+        "values": {
             "disabled": 0,
             "enabled": 1
         }
     },
 
     "4": {
+        "dataType": "OnOrOffV",
         "displayname": "Autoplay",
         "description": "Enable or disable autoplay toasts & notifications",
         "winversions": ["11", "10"],
-        "key": "DisableAutoplay",
-        "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\AutoplayHandlers",
+        "data": "DisableAutoplay",
+        "key": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\AutoplayHandlers",
         "type": "REG_DWORD",
-        "states": {
+        "values": {
             "disabled": 1,
             "enabled": 0
         }
     },
 
     "5": {
+        "dataType": "OnOrOffV",
         "displayname": "Autorun",
         "description": "Enable or disable autorun actions upon detecting a media device",
         "winversions": ["11", "10"],
-        "key": "NoDriveTypeAutoRun",
-        "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
+        "data": "NoDriveTypeAutoRun",
+        "key": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
         "type": "REG_DWORD",
-        "states": {
+        "values": {
             "disabled": 255,
             "enabled": 145
         }
     },
 
     "6": {
+        "dataType": "OnOrOffV",
         "displayname": "Sticky keys prompt",
         "description": "Enable or disable the sticky keys prompt upon pressing shift 5 times",
         "winversions": ["11", "10"],
-        "key": "Flags",
-        "path": "HKEY_USERS\\Default\\Control Panel\\Accessibility\\StickyKeys",
+        "data": "Flags",
+        "key": "HKEY_USERS\\Default\\Control Panel\\Accessibility\\StickyKeys",
         "type": "REG_SZ",
-        "states": {
+        "values": {
             "disabled": "506",
             "enabled": "510"
         }
     },
 
     "7": {
+        "dataType": "OnOrOffV",
         "displayname": "Small taskbar icons",
         "description": "Enable or disable small taskbar icons",
         "winversions": ["11", "10"],
-        "key": "TaskbarSmallIcons",
-        "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+        "data": "TaskbarSmallIcons",
+        "key": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
         "type": "REG_DWORD",
-        "states": {
+        "values": {
             "disabled": "0",
             "enabled": "1"
         }
     },
 
     "8": {
+        "dataType": "OnOrOffV",
         "displayname": "Show known file extensions",
         "description": "Enable or disable showing known file extensions",
         "winversions": ["11", "10", "8.1", "8", "7"],
-        "key": "HideFileExt",
-        "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+        "data": "HideFileExt",
+        "key": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
         "type": "REG_DWORD",
-        "states": {
+        "values": {
             "disabled": "1",
             "enabled": "0"
         }
     },
 
     "9": {
+        "dataType": "OnOrOffV",
         "displayname": "Show hidden files",
         "description": "Enable or disable showing hidden files",
         "winversions": ["11", "10", "8.1", "8", "7"],
-        "key": "Hidden",
-        "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+        "data": "Hidden",
+        "key": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
         "type": "REG_DWORD",
-        "states": {
+        "values": {
             "disabled": "2",
             "enabled": "1"
         }
     },
 
     "10": {
+        "dataType": "OnOrOffV",
         "displayname": "Dark mode",
         "description": "Enable or disable dark mode",
         "winversions": ["11", "10"],
-        "key": "AppsUseLightTheme",
-        "path": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes",
+        "data": "AppsUseLightTheme",
+        "key": "HKEY_USERS\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes",
         "type": "REG_DWORD",
-        "states": {
+        "values": {
             "disabled": "1",
             "enabled": "0"
         }
     },
 
     "11": {
+        "dataType": "OnOrOffV",
         "displayname": "Full screen start menu",
         "description": "Enable or disable full screen start menu",
         "winversions": ["11", "10"],
-        "key": "ForceStartSize",
-        "path": "HKEY_USERS\\Default\\Software\\Policies\\Microsoft\\Windows\\Explorer",
+        "data": "ForceStartSize",
+        "key": "HKEY_USERS\\Default\\Software\\Policies\\Microsoft\\Windows\\Explorer",
         "type": "REG_DWORD",
-        "states": {
+        "values": {
             "disabled": "1",
             "enabled": "2"
         }
     },
 
     "12": {
+        "dataType": "OnOrOffK",
         "displayname": "New context menu",
         "description": "Enable or disable the new right click context menu in Windows 11",
         "winversions": ["11"],
-        "key": "(Default)",
-        "path": "HKEY_USERS\\Default\\Software\\Classes\\CLSID\\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\\InprocServer32",
+        "key": "HKEY_USERS\\Default\\Software\\Classes\\CLSID\\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\\InprocServer32",
         "type": "REG_SZ",
-        "states": {
-            "disabled": "",
-            "enabled": null
+        "values": {
+            "disabled": "create",
+            "enabled": "delete"
+        }
+    },
+
+    "13": {
+        "dataType": "OnOrOffMV",
+        "displayname": "Taskbar search box",
+        "description": "Select size of the taskbar search box",
+        "winversions": ["10"],
+        "key": "HKEY_USERS\\Default\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
+        "type": "REG_DWORD",
+        "values": {
+            "Hidden": "0",
+            "Search icon": "1",
+            "Search box": "2"
         }
     }
 }
