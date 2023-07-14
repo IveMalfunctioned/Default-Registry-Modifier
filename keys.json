@@ -197,7 +197,7 @@
 
     "14": {
         "dataType": "String",
-        "displayname" "Firewall string test",
+        "displayname": "Firewall string test",
         "description": "Change control panel text",
         "winversions": ["10"],
         "data": "@%SystemRoot%\\system32\\FirewallControlPanel.dll,-12122#immutable1",
