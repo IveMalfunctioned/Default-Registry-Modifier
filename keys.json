@@ -173,7 +173,6 @@
 		"description": "Enable or disable the new right click context menu in Windows 11",
 		"winversions": ["11"],
 		"key": "HKEY_USERS\\Default\\Software\\Classes\\CLSID\\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\\InprocServer32",
-		"type": "REG_SZ",
 		"values": {
 			"disabled": "Create the key",
 			"enabled": "Delete the key"
