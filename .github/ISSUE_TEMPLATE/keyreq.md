@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**What does they key or keys you have in mind aim to accomplish or change?**
+**What does the key or keys you have in mind aim to accomplish or change?**
 
 **Key(s) Information**
 Please include the key path, value, data, and type. Please keep in mind that it must be a user-specific key only.
