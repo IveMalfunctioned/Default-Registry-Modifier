@@ -11,7 +11,7 @@ In order to use this program, download one of the precompiled binaries from the 
 
 The program requires administrative privileges to run, so make sure you right click the exe and click "Run as administrator".
 
-Enable or disable the desired tweaks (If you changed your mind about modifying one, click "remove" and it won't be modified). Once you've finished, open the `Menu` tab and click `Save changes`. Read the warning and decide on making your confirmation. It will then apply all selected tweaks to the default user, making it so that next time a user is created these settings are default.
+Select the desired tweaks (If you changed your mind about modifying one, click the button again and it won't be modified, this is visually shown by the highlighting of the buttons). Once you've finished, open the `Menu` tab and click `Save changes`. Read the warning and decide on making your confirmation. It will then apply all selected tweaks to the default user, making it so that next time a user is created these settings are default.
 
 # How it works
 
