@@ -1,5 +1,5 @@
 ---
-name: Keys request
+name: Key request
 about: Suggest a key or keys for the online data table
 title: ''
 labels: ''
