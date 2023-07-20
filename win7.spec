@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['main.py', 'classes.py', 'jsoncreator.py'],
+    ['main_win7.py', 'classes_win7.py', 'jsoncreator_win7.py'],
     pathex=[],
     binaries=[],
     datas=[('icon.ico', '.')],
@@ -28,7 +28,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='Default Registry Modifier',
+    name='Default Registry Modifier Win7',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
