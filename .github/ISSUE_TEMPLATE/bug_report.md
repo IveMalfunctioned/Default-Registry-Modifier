@@ -23,11 +23,8 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Windows Version**
-Please state your Windows version here.
-
-**Application version**
-Please state which version of Default Registry Modifier you are using here. It can be found in Info > About App
+**Application Info**
+Copy paste your application info here. This includes the application version, Python version, and your Windows version
 
 **Console log**
 Please paste your console log here.
