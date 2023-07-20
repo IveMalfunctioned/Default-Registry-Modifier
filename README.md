@@ -7,7 +7,7 @@ Default Registry Modifier is a GUI based tool for Windows made in Python using t
 
 # Usage / download
 
-In order to use this program, download one of the precompiled binaries from the [releases tab](https://github.com/IveMalfunctioned/Default-Registry-Modifier/releases/latest) or compile it. A `main.spec` file is provided for compiling using PyInstaller. Make sure you use Python 3.10.0 or newer. If you're compiling for Windows 7, make sure to use the win7.spec and Python 3.8.0.
+In order to use this program, download one of the precompiled binaries from the [releases tab](https://github.com/IveMalfunctioned/Default-Registry-Modifier/releases/latest) or compile it. A `main.spec` file is provided for compiling using PyInstaller. Make sure you use `Python 3.10.0` or newer. If you're compiling for Windows 7, make sure to use the `win7.spec` file and `Python 3.8.0`.
 
 The program requires administrative privileges to run, so make sure you right click the exe and click "Run as administrator".
 
