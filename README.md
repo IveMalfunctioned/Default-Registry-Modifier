@@ -15,7 +15,7 @@ Select the desired tweaks (If you changed your mind about modifying one, click t
 
 # How it works
 
-The program pulls a list of registry keys from [some online JSON data hosted in this GitHub repo](https://github.com/IveMalfunctioned/Default-Registry-Modifier/blob/main/keys.json). It goes through it and creates an entry for each one with labels & buttons to enable or disable it. Clicking enable or disable adds the selected tweak to a list for enabling or disabling - of which is gone through upon confirming you want to save the changes. One of the planned QOL features is being able to import offline JSON data. This means that you can download `keys.json` from this repo or modify it/create your own. Speaking of which:
+The program pulls a list of registry keys from [some online JSON data hosted in this GitHub repo](https://github.com/IveMalfunctioned/Default-Registry-Modifier/blob/main/keys.json). It goes through it and creates an entry for each one with labels & buttons to enable or disable it. Clicking enable or disable adds the selected tweak to a list of keys and their values that are to be added to the default user's registry, of which is gone through upon confirming you want to save the changes. The application can either use the JSON data hosted at this repository (which it does by default) or a .json file containing the data can be imported for offline use. This means that you can download `keys.json` from this repo or modify it. You can also create your own using the JSON creator utility. Speaking of which:
 
 # Other features:
 - JSON creator utility
