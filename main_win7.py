@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter.filedialog import *
 from tkinter import ttk
-from classes import Hive
-from jsoncreator import jsonCreator
+from classes_win7 import Hive
+from jsoncreator_win7 import jsonCreator
 from datetime import datetime
 import platform
 import subprocess
@@ -158,80 +158,79 @@ if isAdmin():
                 txt.pack(anchor="w", padx=10, pady=(10,0))
                 compattxt.pack(anchor="w", padx=10, pady=(0,5))
 
-                match self.data[str(i)]["dataType"]:
-                    case "OnOrOffV":
-                        btnE = ttk.Button(self.inframe, text="Enable", style="NStyle.TButton", command=lambda i=i: self.addListing(i, self.data[str(i)]["dataType"], "enabled"))
-                        btnE.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
-                        btnE.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
-                        btnE.pack(side="left", padx=(20, 3))
+                if self.data[str(i)]["dataType"] == "OnOrOffV":
+                    btnE = ttk.Button(self.inframe, text="Enable", style="NStyle.TButton", command=lambda i=i: self.addListing(i, self.data[str(i)]["dataType"], "enabled"))
+                    btnE.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
+                    btnE.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
+                    btnE.pack(side="left", padx=(20, 3))
 
-                        btnD = ttk.Button(self.inframe, text="Disable", style="NStyle.TButton", command=lambda i=i: self.addListing(i, self.data[str(i)]["dataType"], "disabled"))
-                        btnD.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
-                        btnD.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
-                        btnD.pack(side="left")
+                    btnD = ttk.Button(self.inframe, text="Disable", style="NStyle.TButton", command=lambda i=i: self.addListing(i, self.data[str(i)]["dataType"], "disabled"))
+                    btnD.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
+                    btnD.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
+                    btnD.pack(side="left")
 
-                        btnP = ttk.Button(self.inframe, text="Properties", style="NStyle.TButton", command=lambda i=i: self.properties(i))
-                        btnP.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
-                        btnP.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
-                        btnP.pack(side="left", padx=3)
+                    btnP = ttk.Button(self.inframe, text="Properties", style="NStyle.TButton", command=lambda i=i: self.properties(i))
+                    btnP.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
+                    btnP.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
+                    btnP.pack(side="left", padx=3)
 
-                        self.btns.append({"btnE" + str(i): btnE, "btnD" + str(i): btnD, "btnP" + str(i): btnP, "txt" + str(i): txt})
-                    case "OnOrOffK":
-                        btnE = ttk.Button(self.inframe, text="Enable", style="NStyle.TButton", command=lambda i=i: self.addListing(i, self.data[str(i)]["dataType"], "enabled"))
-                        btnE.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
-                        btnE.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
-                        btnE.pack(side="left", padx=(20, 3))
+                    self.btns.append({"btnE" + str(i): btnE, "btnD" + str(i): btnD, "btnP" + str(i): btnP, "txt" + str(i): txt})
+                elif self.data[str(i)]["dataType"] == "OnOrOffK":
+                    btnE = ttk.Button(self.inframe, text="Enable", style="NStyle.TButton", command=lambda i=i: self.addListing(i, self.data[str(i)]["dataType"], "enabled"))
+                    btnE.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
+                    btnE.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
+                    btnE.pack(side="left", padx=(20, 3))
 
-                        btnD = ttk.Button(self.inframe, text="Disable", style="NStyle.TButton", command=lambda i=i: self.addListing(i, self.data[str(i)]["dataType"], "disabled"))
-                        btnD.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
-                        btnD.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
-                        btnD.pack(side="left")
+                    btnD = ttk.Button(self.inframe, text="Disable", style="NStyle.TButton", command=lambda i=i: self.addListing(i, self.data[str(i)]["dataType"], "disabled"))
+                    btnD.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
+                    btnD.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
+                    btnD.pack(side="left")
 
-                        btnP = ttk.Button(self.inframe, text="Properties", style="NStyle.TButton", command=lambda i=i: self.properties(i))
-                        btnP.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
-                        btnP.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
-                        btnP.pack(side="left", padx=3)
+                    btnP = ttk.Button(self.inframe, text="Properties", style="NStyle.TButton", command=lambda i=i: self.properties(i))
+                    btnP.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
+                    btnP.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
+                    btnP.pack(side="left", padx=3)
 
-                        self.btns.append({"btnE" + str(i): btnE, "btnD" + str(i): btnD, "btnP" + str(i): btnP, "txt" + str(i): txt})
-                    case "OnOrOffMV":
-                        MVlist = []
-                        a = 0
-                        self.valuesCount = 0
-                        for value in self.data[str(i)]["values"]:
-                            btnV = ttk.Button(self.inframe, text=value, command=lambda i=i, val=value, iBtn=self.valuesCount: self.addListing(i, self.data[str(i)]["dataType"], value=val, iBtn=iBtn), style="NStyle.TButton")
-                            btnV.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
-                            btnV.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
-                            MVlist.append({"btnV" + str(self.valuesCount): btnV})
-                            if not a:
-                                btnV.pack(side="left", padx=(20,3))
-                                a += 1
-                            else:
-                                btnV.pack(side="left", padx=(0,3))
-                            self.valuesCount += 1
-                                
-                        btnP = ttk.Button(self.inframe, text="Properties", style="NStyle.TButton", command=lambda i=i: self.properties(i))
-                        btnP.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
-                        btnP.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
-                        btnP.pack(side="left")
+                    self.btns.append({"btnE" + str(i): btnE, "btnD" + str(i): btnD, "btnP" + str(i): btnP, "txt" + str(i): txt})
+                elif self.data[str(i)]["dataType"] == "OnOrOffMV":
+                    MVlist = []
+                    a = 0
+                    self.valuesCount = 0
+                    for value in self.data[str(i)]["values"]:
+                        btnV = ttk.Button(self.inframe, text=value, command=lambda i=i, val=value, iBtn=self.valuesCount: self.addListing(i, self.data[str(i)]["dataType"], value=val, iBtn=iBtn), style="NStyle.TButton")
+                        btnV.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
+                        btnV.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
+                        MVlist.append({"btnV" + str(self.valuesCount): btnV})
+                        if not a:
+                            btnV.pack(side="left", padx=(20,3))
+                            a += 1
+                        else:
+                            btnV.pack(side="left", padx=(0,3))
+                        self.valuesCount += 1
+                            
+                    btnP = ttk.Button(self.inframe, text="Properties", style="NStyle.TButton", command=lambda i=i: self.properties(i))
+                    btnP.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
+                    btnP.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
+                    btnP.pack(side="left")
 
-                        self.btns.append({"mvBtns" + i: MVlist, "btnP" + i: btnP})
-                    case "String":
-                        self.entry_var = tk.StringVar()
-                        self.entry_var.trace("w", lambda *args, i=i, dataType=self.data[str(i)]["dataType"]: passString(i, dataType))
-                        strEntry = ttk.Entry(self.inframe, text="Hello", width=38, textvariable=self.entry_var)
-                        strEntry.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
-                        strEntry.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
+                    self.btns.append({"mvBtns" + i: MVlist, "btnP" + i: btnP})
+                elif self.data[str(i)]["dataType"] == "String":
+                    self.entry_var = tk.StringVar()
+                    self.entry_var.trace("w", lambda *args, i=i, dataType=self.data[str(i)]["dataType"]: passString(i, dataType))
+                    strEntry = ttk.Entry(self.inframe, text="Hello", width=38, textvariable=self.entry_var)
+                    strEntry.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
+                    strEntry.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
 
-                        strEntry.pack(side="left", padx=(20,3))
+                    strEntry.pack(side="left", padx=(20,3))
 
-                        btnP = ttk.Button(self.inframe, text="Properties", style="NStyle.TButton", command=lambda i=i: self.properties(i))
-                        btnP.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
-                        btnP.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
-                        btnP.pack(side="left")
+                    btnP = ttk.Button(self.inframe, text="Properties", style="NStyle.TButton", command=lambda i=i: self.properties(i))
+                    btnP.bind('<MouseWheel>', lambda event: self.canvas.yview_scroll(int(event.delta / -60), "units"))
+                    btnP.bind('<Shift-MouseWheel>', lambda event: self.canvas.xview_scroll(int(event.delta / -60), "units"))
+                    btnP.pack(side="left")
 
-                        self.btns.append({"strBox" + i: strEntry, "btnP" + i: btnP})
-                    case __:
-                        pass
+                    self.btns.append({"strBox" + i: strEntry, "btnP" + i: btnP})
+                else:
+                    pass
                     
                 self.count += 1
                 def passString(i, dataType):
